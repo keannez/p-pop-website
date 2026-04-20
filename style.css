@@ -95,6 +95,11 @@ button:hover{
     font-weight: bold;
 }
 
+audio{
+    margin-top:15px;
+    width:300px;
+}
+
 @media(max-width:600px){
 
 h1{
