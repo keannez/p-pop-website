@@ -89,6 +89,12 @@ button:hover{
     margin-top:30px;
 }
 
+#message{
+    margin-top:20px;
+    color: green;
+    font-weight: bold;
+}
+
 @media(max-width:600px){
 
 h1{
