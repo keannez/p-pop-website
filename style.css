@@ -68,6 +68,7 @@ input, textarea{
     width:100%;
     padding:10px;
     margin:10px 0;
+
 }
 
 button{
@@ -75,6 +76,154 @@ button{
     color:white;
     border:none;
     padding:10px 20px;
+}
+
+/* Layout & Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    color: #333333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* The Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #0000001a; /* Hex with alpha */
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px #00000033;
+}
+
+.img-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-text {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* --- THE POP-UP SYSTEM --- */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc; /* Black with 80% opacity */
+    display: none; /* Hidden until clicked */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Trigger the Pop-up */
+.overlay:target {
+    display: flex;
+}
+
+.info-panel {
+    background-color: whitesmoke;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px;
+    animation: slideIn 0.4s ease;
+}
+
+.panel-content {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.panel-img {
+    flex: 1;
+    min-width: 280px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.panel-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.tagline {
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Buttons and Close UI */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #999999;
+}
+
+.exit-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: darkslategrey;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .panel-content { flex-direction: column; }
+    .info-panel { height: 80vh; overflow-y: auto; }
 }
 
 button:hover{
@@ -100,6 +249,10 @@ audio{
     width:300px;
 }
 
+.container img{
+    border-radius:10px;
+}
+
 @media(max-width:600px){
 
 h1{
@@ -112,6 +265,7 @@ flex-direction:column;
 
 .banner{
 width:100%;
+
 }
 
 }
