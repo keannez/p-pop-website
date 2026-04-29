@@ -1,46 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Groups</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>P-Pop Groups</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="navbar">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="groups.html">Groups</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="groups.html">Groups</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
 </div>
 
 <div class="container">
+    <header class="page-title">
+        <h1>P-Pop Industry Leaders</h1>
+        <p>Click a group to explore their profile.</p>
+    </header>
+    
+    <div class="grid">
+        <!-- SB19 Card -->
+        <a href="#sb19-profile" class="card">
+            <div class="img-box">
+                <img src="group1.jpg" alt="SB19">
+            </div>
+            <div class="card-text">
+                <h3>SB19</h3>
+                <span class="btn-text">View Details</span>
+            </div>
+        </a>
 
-<h1>P-Pop Groups</h1>
+        <!-- BINI Card -->
+        <a href="#bini-profile" class="card">
+            <div class="img-box">
+                <img src="group2.jpg" alt="BINI">
+            </div>
+            <div class="card-text">
+                <h3>BINI</h3>
+                <span class="btn-text">View Details</span>
+            </div>
+        </a>
 
-<div class="grid">
-
-<div class="card">
-<img src="group1.jpg">
-<h3>SB19</h3>
+        <!-- BGYO Card -->
+        <a href="#bgyo-profile" class="card">
+            <div class="img-box">
+                <img src="group3.jpg" alt="BGYO">
+            </div>
+            <div class="card-text">
+                <h3>BGYO</h3>
+                <span class="btn-text">View Details</span>
+            </div>
+        </a>
+    </div>
 </div>
 
-<div class="card">
-<img src="group2.jpg">
-<h3>BINI</h3>
+<!-- OVERLAY PROFILES -->
+
+<div id="sb19-profile" class="overlay">
+    <div class="info-panel">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="panel-content">
+            <img src="group1.jpg" class="panel-img">
+            <div class="panel-text">
+                <h2>SB19</h2>
+                <p class="tagline">The Kings of P-Pop</p>
+                <p><strong>Lineup:</strong> Pablo, Josh, Stell, Ken, Justin</p>
+                <p><strong>Notable Work:</strong> SB19 is renowned for "Gento" and "MAPA." They are pioneers in the P-Pop movement, achieving international acclaim on the Billboard charts.</p>
+                <a href="#" class="exit-link">Close Profile</a>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="card">
-<img src="group3.jpg">
-<h3>BGYO</h3>
+<div id="bini-profile" class="overlay">
+    <div class="info-panel">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="panel-content">
+            <img src="group2.jpg" class="panel-img">
+            <div class="panel-text">
+                <h2>BINI</h2>
+                <p class="tagline">The Nation's Girl Group</p>
+                <p><strong>Lineup:</strong> Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, Sheena</p>
+                <p><strong>Notable Work:</strong> Widely loved for their summer hit "Pantropiko," BINI brings a fresh, vibrant energy to the Philippine music scene.</p>
+                <a href="#" class="exit-link">Close Profile</a>
+            </div>
+        </div>
+    </div>
 </div>
 
-</div>
-
+<div id="bgyo-profile" class="overlay">
+    <div class="info-panel">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="panel-content">
+            <img src="group3.jpg" class="panel-img">
+            <div class="panel-text">
+                <h2>BGYO</h2>
+                <p class="tagline">The Aces of P-Pop</p>
+                <p><strong>Lineup:</strong> Gelo, Akira, JL, Mikki, Nate</p>
+                <p><strong>Notable Work:</strong> Known for sharp choreography and synchronized performances, BGYO has made waves with tracks like "The Light."</p>
+                <a href="#" class="exit-link">Close Profile</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="footer">
-© 2026 P-Pop Music Website
+    © 2026 P-Pop Music Website
 </div>
 
 </body>
